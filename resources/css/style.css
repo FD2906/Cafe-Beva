@@ -8,10 +8,19 @@ html {
     padding: 0px;
 }
 
+.main-content {
+    position: relative;
+    top: 5rem; /* offsets the content due to fixed header */ 
+}
+
+.center {
+    text-align: center;
+} 
+  
 .button {
     border-radius: 5px;
     border: 1px solid #272829; /* chosen shade of black */
-    padding: 10px;
+    padding: 0.625rem;
     background-color: #F7FFE5; /* light green */
     color: #272829; 
 }
@@ -39,7 +48,6 @@ header .logo {
     font-size: 2.5rem; /* 40px */
     flex: 1 1 2.5rem;
     text-decoration: none;
-    text-align: horizontally;
 }
 
 header nav ul {
@@ -71,14 +79,66 @@ nav a:hover {
     color: #272829;
 }
 
-a.reserve { /* styling the reserve button */
+nav a.reserve { /* styling the reserve button */
     padding: 12.5px 30px;   
 
     /* transition to darker shade on hover */
     transition-property: background-color;
-    transition-duration: 500ms;
+    transition-duration: 250ms;
 }   
 
-a.reserve:hover {
+nav a.reserve:hover {
     background-color: #A0C49D;
 }
+
+
+/* Hero Image Section */
+
+#hero-image-section {
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/coffee-and-croissants.JPG');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2.mono-subtitle {
+    color: #F7FFE5;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+}
+
+h1.logo {
+    font-family: "Dancing Script", "Pacifico";
+    font-size: 8rem;
+    text-decoration: none;
+    text-align: center;
+    margin: 1rem auto 3rem auto;
+}
+
+span.button { /* for styling the background and border and details of the button */
+    font-size: 1.25rem;
+    padding: 20px 60px;
+    margin: 0 auto; /* centers button */
+
+    color: white;
+    border-color: white;
+    background-color: transparent;
+
+    transition: color 250ms, background-color 250ms;
+}
+
+span.button:hover {
+    color: #272829;
+    background-color: white;
+}
+
+
+
+
