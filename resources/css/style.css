@@ -1,6 +1,7 @@
 /* Universal Styles */
 
 html {
+    color: #272829; /* chosen shade of black */
     background-color: #F7FFE5;
     font-size: 16px;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -13,16 +14,31 @@ html {
     top: 5rem; /* offsets the content due to fixed header */ 
 }
 
+.left {
+    text-align: left;
+}
+
 .center {
     text-align: center;
 } 
   
 .button {
-    border-radius: 5px;
-    border: 1px solid #272829; /* chosen shade of black */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: .25rem;
+    border: 1px solid #272829; 
     padding: 0.625rem;
     background-color: #F7FFE5; /* light green */
     color: #272829; 
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+}
+
+.button:hover {
+    background-color: #A0C49D;
 }
 
 /* Header */
@@ -38,7 +54,6 @@ header {
 header .content {
     display: flex;
     align-items: center;
-    vertical-align: middle;
     height: 5rem; /* 80px */
     margin: auto 3.125rem; /* 50px */
 }
@@ -53,6 +68,9 @@ header .logo {
 header nav ul {
     display: flex; /* creates flex container for li elements */
     list-style: none; /* gets rid of bulletpoints */
+
+    justify-content: center;
+    align-items: center;
 }
 
 nav li {
@@ -80,21 +98,14 @@ nav a:hover {
 }
 
 nav a.reserve { /* styling the reserve button */
-    padding: 12.5px 30px;   
-
-    /* transition to darker shade on hover */
-    transition-property: background-color;
-    transition-duration: 250ms;
+    padding: .75rem 1.5rem;
 }   
 
-nav a.reserve:hover {
-    background-color: #A0C49D;
-}
 
 
 /* Hero Image Section */
 
-#hero-image-section {
+#hero-image-container {
     color: white;
 
     display: flex;
@@ -122,9 +133,9 @@ h1.logo {
     margin: 1rem auto 3rem auto;
 }
 
-span.button { /* for styling the background and border and details of the button */
+#cta-button { /* for styling the background and border and details of the button */
     font-size: 1.25rem;
-    padding: 20px 60px;
+    padding: 1.25rem 3.75rem;
     margin: 0 auto; /* centers button */
 
     color: white;
@@ -134,11 +145,83 @@ span.button { /* for styling the background and border and details of the button
     transition: color 250ms, background-color 250ms;
 }
 
-span.button:hover {
+#cta-button:hover {
     color: #272829;
     background-color: white;
 }
 
 
+/* Middle of Page Section */
+
+#middle-page-container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3.125rem;
+    height: 40rem;
+}
+
+.middle-page-headings { /* Styling the h2 headings */
+    font-size: 2rem;
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+/* Left-side Column */
+
+.subsection {
+    display: flex;
+    align-items: stretch;
+
+    /* border: 1px solid black; */
+
+    padding: 1.25rem 0; /* 20px */
+    margin-bottom: 1.25rem; /* To separate the two menu subsections */
+}
+
+.menu-images {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding-right: 1.25rem;
+}
+
+.menu-images img { /* Setting the size of the images */
+    display: block;
+    height: auto;
+    max-width: 100%;
+
+    border: 2px solid #272829;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Example shadow */
+}
+
+.menu-content { /* To place the content to the right */
+    flex: 2;
+    max-width: 60%;
+}
+
+.menu-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: .625rem;
+}
+
+.menu-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Right-side Column */
+
+#about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-us p {
+    text-align: justify;
+}
 
 

@@ -4,16 +4,14 @@
 
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home - Café Beva</title>
         <link rel="stylesheet" href="resources\css\reset.css" type="text/css">
         <link rel="stylesheet" href="resources\css\style.css" type="text/css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@300;400;700&family=Dancing+Script:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
     </head>
 
 
@@ -24,11 +22,10 @@
                 <a href="index.html" class="desktop logo">Café Beva</a>
                 <nav class="desktop">
                     <ul>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Store</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#" class="button reserve">Reserve</a></li>
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer">Menus</a></li>
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer">About</a></li>
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer">Contact</a></li>
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer" class="button reserve">Store</a></li>
                     </ul>
                 </nav>
 
@@ -40,12 +37,69 @@
         <main class="main-content">
 
             <!-- Fold Section - HD picture, logo, subtitle and CTA button -->
-            <section id="hero-image-section">
+            <section id="hero-image-container">
                 <div class="content center">
-                    <h2 class="mono-subtitle">MADE WITH LOVE IN GLANMIRE, CO. CORK</h2> <!-- Subheading comes on top of logo -->
+                    <h2 class="mono-subtitle">MADE WITH LOVE IN GLANMIRE, CORK</h2> <!-- Subheading comes on top of logo -->
                     <h1 class="logo">Café Beva</h1> 
-                    <a href="#"><span class="button center">Reserve a Table</span></a> <!-- CTA Button -->
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><span class="button center" id="cta-button">Visit Our Online Store</span></a> <!-- CTA Button -->
                 </div>
+            </section>
+
+            <!-- Middle of Page - Left: Menus, Right: About Us-->
+            <section id="middle-page-container">
+                <!-- Left: Menus Section -->
+                <section class="left-column left">
+                    <h2 class="middle-page-headings">Menus</h2>
+                    <!-- Two Rows as Subsections -->
+                    <article class="subsection left">
+
+                        <figure class="menu-images"> <!-- Breakfast Image -->
+                            <img src="resources\images\eggs-benedict-square.jpg" alt="Eggs Benedict">
+                        </figure>
+
+                        <section class="menu-content"> <!-- Text and Button -->
+                            <h3>All-Day Breakfast</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut orci tempor, consequat lacus id, aliquam lacus. Maecenas egestas sem.</p>
+                            <a href="http://" target="_blank" rel="noopener noreferrer"><span class="button">See Our Breakfast Menu</span></a>
+                        </section>
+
+                    </article>
+
+                    <article class="subsection left">
+
+                        <figure class="menu-images"> <!-- Lunch and Specials Image -->
+                            <img src="resources\images\fish-and-chips.JPG" alt="Fish and Chips">
+                        </figure>
+
+                        <section class="menu-content"> <!-- Text and Button -->
+                            <h3>Lunch and Specials</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut orci tempor, consequat lacus id, aliquam lacus. Maecenas egestas sem.</p>
+                            <a href="http://" target="_blank" rel="noopener noreferrer"><span class="button">See Our Lunch Menu</span></a>
+                        </section>
+
+                    </article>
+                </section>
+                
+                <!-- Right: About Us Section-->
+                <section class="right-column center">
+                    <!-- About Us Box -->
+                    <article id="about-us">
+                        <h2 class="middle-page-headings">About Us</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Curabitur at nisi ut ipsum lacinia malesuada in in sem. 
+                            Maecenas facilisis mauris nec luctus lacinia. 
+                            Vestibulum vel pretium felis. Sed nec gravida augue. 
+                            Etiam porttitor sollicitudin enim, rhoncus egestas dolor vehicula eget. 
+                            Duis id ligula consequat, tempor urna at, porttitor nunc. 
+                            Donec vel orci quis felis congue finibus sit amet vel dolor. 
+                            Quisque id felis ac massa volutpat egestas eget et neque. 
+                            Phasellus facilisis arcu eget dignissim venenatis. 
+                            Sed pellentesque nisl ut vehicula dignissim. 
+                            Vestibulum ipsum enim, consectetur sit amet urna non, luctus dictum tellus. 
+                            Duis tincidunt non eros nec tristique.</p>
+                        <a href="http://" target="_blank" rel="noopener noreferrer"><span class="button">Learn More</span></a>
+                    </article>
+                </section>
             </section>
 
         </main>
